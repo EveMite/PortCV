@@ -1,0 +1,65 @@
+/* =========================================================
+   Módulo Educación y Referencias (educacion.html)
+   ========================================================= */
+
+.two-col-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  align-items: start;
+}
+
+.edu-stack,
+.ref-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.edu-card,
+.ref-card {
+  padding: 1.45rem 1.6rem;
+}
+
+.edu-period {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-bronze-dark);
+  margin-bottom: 0.35rem;
+}
+
+.edu-card h3,
+.ref-card h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.25rem;
+}
+
+.edu-card p,
+.ref-role {
+  margin: 0;
+  color: var(--ink-secondary);
+  font-size: 0.92rem;
+}
+
+.ref-links {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.2rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.ref-links a {
+  color: var(--accent-bronze-dark);
+}
+
+.ref-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  .two-col-layout {
+    grid-template-columns: 1fr;
+  }
+}

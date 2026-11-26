@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evelyn Mite | Portafolio Profesional — Ing. en Ciencias de la Computación</title>
+  <title>Evelyn Mite | Portafolio Profesional — Inicio</title>
   <meta name="description"
     content="Portafolio profesional de Evelyn Mite, Ingeniera en Ciencias de la Computación especializada en desarrollo de consultas PL/SQL (Oracle), bases de datos y soporte TI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="inicio.css">
 </head>
 
 <body id="top">
@@ -21,7 +22,7 @@
   <!-- Barra de navegación -->
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="#inicio" class="brand" aria-label="Evelyn Mite Inicio">
+      <a href="Hoja.html" class="brand" aria-label="Evelyn Mite Inicio">
         <span class="brand-mark">EM</span>
         <span class="brand-text">Evelyn Mite</span>
       </a>
@@ -34,12 +35,13 @@
       </button>
 
       <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
-        <a href="#perfil" class="nav-link">Perfil</a>
-        <a href="#experiencia" class="nav-link">Experiencia</a>
-        <a href="#habilidades" class="nav-link">Habilidades</a>
-        <a href="#certificados" class="nav-link">Certificados</a>
-        <a href="#educacion" class="nav-link">Educación</a>
-        <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+        <a href="Hoja.html" class="nav-link active">Inicio</a>
+        <a href="perfil.html" class="nav-link">Perfil</a>
+        <a href="experiencia.html" class="nav-link">Experiencia</a>
+        <a href="habilidades.html" class="nav-link">Habilidades</a>
+        <a href="certificados.html" class="nav-link">Certificados</a>
+        <a href="educacion.html" class="nav-link">Educación</a>
+        <a href="contacto.html" class="nav-link nav-cta">Contacto</a>
       </nav>
     </div>
   </header>
@@ -65,8 +67,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#contacto" class="btn btn-primary">Contactar ahora</a>
-            <a href="#experiencia" class="btn btn-secondary">Ver trayectoria</a>
+            <a href="contacto.html" class="btn btn-primary">Contactar ahora</a>
+            <a href="experiencia.html" class="btn btn-secondary">Ver trayectoria</a>
             <button type="button" class="btn btn-ghost" id="printBtn" title="Imprimir o guardar como PDF">
               Imprimir / PDF
             </button>
@@ -106,7 +108,6 @@
         <aside class="hero-visual reveal" aria-label="Tarjeta de presentación">
           <div class="portrait-card">
             <div class="portrait-frame">
-              <!-- Si colocas tu foto como "foto.jpg" en la carpeta MI_CV, aparecerá automáticamente aquí -->
               <img src="Foto _CV.png" alt="Fotografía profesional de Evelyn Mite" class="portrait-img"
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="portrait-fallback" aria-hidden="true">
@@ -119,419 +120,57 @@
       </div>
     </section>
 
-    <!-- Perfil profesional -->
-    <section class="section section-alt" id="perfil">
+    <!-- Índice de módulos -->
+    <section class="section section-alt">
       <div class="container">
         <div class="section-header reveal">
-          <span class="eyebrow">01 · Perfil Profesional</span>
-          <h2>Compromiso técnico, orden analítico y enfoque en resultados</h2>
+          <span class="eyebrow">Secciones del Portafolio</span>
+          <h2>Explora cada módulo</h2>
+          <p class="section-desc">Selecciona cualquier sección para ver el detalle completo en su propia página.</p>
         </div>
 
-        <div class="profile-grid">
-          <div class="profile-statement card reveal">
-            <p class="lead-quote">
-              “Mi trayectoria me ha permitido desempeñarme con éxito en distintas funciones y colaborar de manera
-              efectiva en equipos multidisciplinarios.”
-            </p>
-            <p>
-              Cuento con experiencia en el manejo de diversas plataformas tecnológicas, programas de oficina y
-              herramientas informáticas avanzadas. Me caracterizo por un alto nivel de motivación, compromiso y
-              capacidad de adaptación a nuevos entornos, asumiendo responsabilidades con eficiencia y orientando mi
-              trabajo hacia la obtención de resultados confiables.
-            </p>
-          </div>
+        <div class="modules-grid">
+          <a href="perfil.html" class="module-card card reveal">
+            <span class="module-num">01 · Perfil</span>
+            <h3>Perfil Profesional</h3>
+            <p>Resumen de trayectoria, enfoque en resultados y pilares técnicos en bases de datos y soporte.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
 
-          <div class="pillars-grid reveal">
-            <article class="pillar-card">
-              <span class="pillar-index">01</span>
-              <h3>Integridad de Datos</h3>
-              <p>Validación mediante consultas SQL, detección temprana de anomalías y aplicación de restricciones para
-                mantener la consistencia del sistema.</p>
-            </article>
-            <article class="pillar-card">
-              <span class="pillar-index">02</span>
-              <h3>Seguridad y Accesos</h3>
-              <p>Aplicación de políticas de control de acceso mediante la gestión de usuarios, roles y permisos en bases
-                de datos Oracle.</p>
-            </article>
-            <article class="pillar-card">
-              <span class="pillar-index">03</span>
-              <h3>Automatización &amp; QA</h3>
-              <p>Automatización de reportes diarios de órdenes pendientes y seguimiento de pruebas en ambientes TEST y
-                PROD.</p>
-            </article>
-            <article class="pillar-card">
-              <span class="pillar-index">04</span>
-              <h3>Soporte N1 &amp; M365</h3>
-              <p>Resolución de incidencias de software y hardware, monitoreo de Office 365, gestión de licencias y
-                soporte CRM One.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+          <a href="experiencia.html" class="module-card card reveal">
+            <span class="module-num">02 · Experiencia</span>
+            <h3>Trayectoria Laboral</h3>
+            <p>Hitss, Globalhitss, Cátedra UNESCO – TICAD y Lago Travel con logros y responsabilidades.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
 
-    <!-- Experiencia -->
-    <section class="section" id="experiencia">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">02 · Trayectoria Laboral</span>
-          <h2>Experiencia Profesional</h2>
-          <p class="section-desc">Evolución desde atención operativa y soporte técnico hasta desarrollo especializado en
-            bases de datos Oracle PL/SQL.</p>
-        </div>
+          <a href="habilidades.html" class="module-card card reveal">
+            <span class="module-num">03 · Habilidades</span>
+            <h3>Competencias Técnicas</h3>
+            <p>Dominio de Oracle PL/SQL, MySQL, programación, Office 365, redes Cisco CCNA e ITIL V4.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-date">
-              <span class="date-pill current">2024 – Actualidad</span>
-            </div>
-            <div class="timeline-card card">
-              <div class="timeline-head">
-                <div>
-                  <h3>Hitss — Ing. Proyectos Junior</h3>
-                  <p class="role-tag">Desarrollo de consultas PL/SQL (Oracle)</p>
-                </div>
-              </div>
-              <ul class="detail-list">
-                <li>Desarrollo de consultas SQL para validar la integridad de la información, identificar anomalías y
-                  verificar el correcto funcionamiento de los procesos del sistema.</li>
-                <li>Aseguramiento de la consistencia de los datos mediante la definición y control de restricciones.
-                </li>
-                <li>Aplicación de políticas de control de acceso: administración de usuarios, roles y permisos.</li>
-                <li>Automatización del envío diario de reportes con órdenes pendientes.</li>
-                <li>Ejecución y seguimiento de pruebas en ambientes de calidad (TEST) y producción (PROD).</li>
-              </ul>
-            </div>
-          </article>
+          <a href="certificados.html" class="module-card card reveal">
+            <span class="module-num">04 · Certificados</span>
+            <h3>Formación Continua</h3>
+            <p>Las 12 certificaciones acreditadas con filtro por Cisco, CARSO, Udemy y congresos.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">
-              <span class="date-pill">2024</span>
-            </div>
-            <div class="timeline-card card">
-              <div class="timeline-head">
-                <div>
-                  <h3>Globalhitss — Pasante</h3>
-                  <p class="role-tag">Soporte de N1 Desktop &amp; Periféricos</p>
-                </div>
-              </div>
-              <ul class="detail-list">
-                <li>Instalación y configuración de aplicaciones corporativas.</li>
-                <li>Monitoreo y soporte básico de herramientas Microsoft Office 365.</li>
-                <li>Diagnóstico y solución de problemas de software y hardware.</li>
-                <li>Soporte técnico en aplicativos CRM One y verificación de licencias.</li>
-              </ul>
-            </div>
-          </article>
+          <a href="educacion.html" class="module-card card reveal">
+            <span class="module-num">05 · Educación &amp; Respaldo</span>
+            <h3>Educación y Referencias</h3>
+            <p>Formación universitaria en la UPS, unidades educativas y referencias profesionales.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">
-              <span class="date-pill">2023</span>
-            </div>
-            <div class="timeline-card card">
-              <div class="timeline-head">
-                <div>
-                  <h3>Cátedra UNESCO Sede Guayaquil — Prácticas Comunitarias</h3>
-                  <p class="role-tag">Tecnologías de Información y Comunicación Asociadas a la Discapacidad (TICAD)</p>
-                </div>
-              </div>
-              <ul class="detail-list">
-                <li>Apoyo tecnológico en iniciativas de inclusión digital vinculadas a TICAD en la Universidad
-                  Politécnica Salesiana.</li>
-                <li>Referencia institucional: MSc. Bertha Naranjo, Gerente de la Cátedra UNESCO y docente de la UPS
-                  (04590630).</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-date">
-              <span class="date-pill">2020 – 2021</span>
-            </div>
-            <div class="timeline-card card">
-              <div class="timeline-head">
-                <div>
-                  <h3>Lago Travel — Call Center</h3>
-                  <p class="role-tag">Operador de Servicios</p>
-                </div>
-              </div>
-              <ul class="detail-list">
-                <li>Organización de citas y coordinación de servicios de paquetes turísticos.</li>
-                <li>Organización y control de documentos operativos.</li>
-                <li>Estructuración y mantenimiento de base de datos de clientes y servicios.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Habilidades -->
-    <section class="section section-alt" id="habilidades">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">03 · Competencias Técnicas</span>
-          <h2>Habilidades y Herramientas</h2>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card card reveal">
-            <div class="skill-head">
-              <h3>Bases de Datos</h3>
-              <span class="level-badge level-high">Nivel Alto</span>
-            </div>
-            <p class="skill-note">Consultas complejas, integridad referencial, restricciones, roles y automatización de
-              reportes.</p>
-            <div class="skill-bars">
-              <div class="skill-bar-row">
-                <div class="bar-label"><span>Oracle · PL/SQL</span><span>Alto</span></div>
-                <div class="bar-track">
-                  <div class="bar-fill" style="width: 92%"></div>
-                </div>
-              </div>
-              <div class="skill-bar-row">
-                <div class="bar-label"><span>MySQL · SQL</span><span>Alto</span></div>
-                <div class="bar-track">
-                  <div class="bar-fill" style="width: 88%"></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="skill-card card reveal">
-            <div class="skill-head">
-              <h3>Programación &amp; Web</h3>
-              <span class="level-badge level-mid">Nivel Intermedio</span>
-            </div>
-            <p class="skill-note">Desarrollo lógico, scripting y maquetación web con bases sólidas en JavaScript y
-              Python.</p>
-            <div class="tag-cloud">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML5</span>
-            </div>
-          </article>
-
-          <article class="skill-card card reveal">
-            <div class="skill-head">
-              <h3>Ofimática &amp; Gestión</h3>
-              <span class="level-badge level-high">Nivel Avanzado</span>
-            </div>
-            <p class="skill-note">Documentación técnica, análisis de reportes en hojas de cálculo y presentaciones
-              ejecutivas.</p>
-            <div class="tag-cloud">
-              <span class="tech-tag">Microsoft Word</span>
-              <span class="tech-tag">Microsoft Excel</span>
-              <span class="tech-tag">PowerPoint</span>
-              <span class="tech-tag">Office 365</span>
-              <span class="tech-tag">CRM One</span>
-            </div>
-          </article>
-
-          <article class="skill-card card reveal">
-            <div class="skill-head">
-              <h3>Redes, Servicio &amp; Idioma</h3>
-              <span class="level-badge level-mid">Intermedio</span>
-            </div>
-            <p class="skill-note">Fundamentos de networking Cisco CCNA (1–4), gestión de servicios ITIL V4 e inglés
-              técnico.</p>
-            <div class="tag-cloud">
-              <span class="tech-tag">English (Intermedio)</span>
-              <span class="tech-tag">Cisco CCNA 1–4</span>
-              <span class="tech-tag">ITIL V4</span>
-              <span class="tech-tag">Soporte N1</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certificados -->
-    <section class="section" id="certificados">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">04 · Formación Continua</span>
-          <h2>Certificaciones y Cursos</h2>
-          <p class="section-desc">Filtra por institución o área para explorar las 12 certificaciones acreditadas.</p>
-        </div>
-
-        <div class="filter-bar reveal" role="tablist" aria-label="Filtrar certificaciones">
-          <button type="button" class="filter-btn active" data-filter="all">Todas (12)</button>
-          <button type="button" class="filter-btn" data-filter="cisco">Cisco (3)</button>
-          <button type="button" class="filter-btn" data-filter="carso">CARSO (5)</button>
-          <button type="button" class="filter-btn" data-filter="especial">Udemy &amp; Académicos (4)</button>
-        </div>
-
-        <div class="cert-grid" id="certGrid">
-          <article class="cert-card card reveal" data-category="especial">
-            <span class="cert-issuer">Udemy</span>
-            <h3>ORACLE PL/SQL - Avanzado</h3>
-            <p>Especialización en programación y optimización de consultas en Oracle Database.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="especial">
-            <span class="cert-issuer">Udemy</span>
-            <h3>Introducción a la Gestión de Servicios - ITIL V4</h3>
-            <p>Buenas prácticas para la operación, soporte y entrega de servicios tecnológicos.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="cisco">
-            <span class="cert-issuer">Cisco Networking Academy · 2023</span>
-            <h3>Conocimiento de CCNA1, CCNA2, CCNA3, CCNA4</h3>
-            <p>Arquitectura de redes, enrutamiento, conmutación y conectividad empresarial.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="cisco">
-            <span class="cert-issuer">Cisco Networking Academy · 2023</span>
-            <h3>Python Essentials 1 - 2</h3>
-            <p>Fundamentos de programación estructurada y orientada a objetos en Python.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="cisco">
-            <span class="cert-issuer">Cisco Networking Academy · 2023</span>
-            <h3>JavaScript Essentials 1</h3>
-            <p>Lógica de programación y desarrollo interactivo para entornos web.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="especial">
-            <span class="cert-issuer">CITIS · 2024</span>
-            <h3>X International Conference on Science, Technology and Innovation for Society</h3>
-            <p>Participación en congreso internacional de ciencia, tecnología e innovación.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="especial">
-            <span class="cert-issuer">Grupo TICAD · 2023</span>
-            <h3>Inteligencia Artificial</h3>
-            <p>Fundamentos y aplicaciones prácticas de la inteligencia artificial.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="carso">
-            <span class="cert-issuer">CARSO</span>
-            <h3>Curador de Datos</h3>
-            <p>Organización, calidad, limpieza y gobernanza responsable de datos.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="carso">
-            <span class="cert-issuer">CARSO</span>
-            <h3>Administrador de la Nube</h3>
-            <p>Principios de operación y administración de entornos en la nube.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="carso">
-            <span class="cert-issuer">CARSO</span>
-            <h3>Introducción a la Seguridad de la Información</h3>
-            <p>Controles, confidencialidad, integridad y disponibilidad de la información.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="carso">
-            <span class="cert-issuer">CARSO</span>
-            <h3>Protección de Datos Personales en América Móvil</h3>
-            <p>Cumplimiento normativo y resguardo ético de datos personales.</p>
-          </article>
-
-          <article class="cert-card card reveal" data-category="carso">
-            <span class="cert-issuer">CARSO</span>
-            <h3>Código de Ética América Móvil</h3>
-            <p>Estándares corporativos de integridad y conducta profesional.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Educación y Referencias -->
-    <section class="section section-alt" id="educacion">
-      <div class="container two-col-layout">
-        <div class="reveal">
-          <div class="section-header compact">
-            <span class="eyebrow">05 · Educación</span>
-            <h2>Formación Académica</h2>
-          </div>
-
-          <div class="edu-stack">
-            <article class="edu-card card">
-              <span class="edu-period">2021 – 2025</span>
-              <h3>Universidad Politécnica Salesiana</h3>
-              <p>Ingeniería en Ciencias de la Computación</p>
-            </article>
-            <article class="edu-card card">
-              <span class="edu-period">2017 – 2020</span>
-              <h3>Unidad Educativa “Ati II Pillahuaso”</h3>
-              <p>Educación Secundaria / Bachillerato</p>
-            </article>
-            <article class="edu-card card">
-              <span class="edu-period">2013 – 2017</span>
-              <h3>Unidad Educativa “Lola Arosemena del Carbo”</h3>
-              <p>Educación Básica Superior</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="reveal">
-          <div class="section-header compact">
-            <span class="eyebrow">06 · Respaldo</span>
-            <h2>Referencias Profesionales</h2>
-          </div>
-
-          <div class="ref-stack">
-            <article class="ref-card card">
-              <h3>María Mite</h3>
-              <p class="ref-role">Ing. Sistemas / QA</p>
-              <div class="ref-links">
-                <a href="tel:+593960665348">Tel: 0960665348</a>
-                <a href="mailto:mafermitefl@gmail.com">mafermitefl@gmail.com</a>
-              </div>
-            </article>
-
-            <article class="ref-card card">
-              <h3>Jean Bermudes</h3>
-              <p class="ref-role">Ing. Sistemas / Diseñador UX/UI</p>
-              <div class="ref-links">
-                <a href="tel:+593997986450">Tel: 0997986450</a>
-                <a href="mailto:bermudesmora@gmail.com">bermudesmora@gmail.com</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="section" id="contacto">
-      <div class="container">
-        <div class="contact-wrapper card reveal">
-          <div class="contact-info">
-            <span class="eyebrow">07 · Contacto</span>
-            <p>
-              Si buscas una profesional comprometida con la calidad de datos, soporte eficiente y aprendizaje continuo,
-              encantada de conversar contigo.
-            </p>
-
-            <div class="contact-details">
-              <div class="contact-row">
-                <span class="contact-label">Correo electrónico</span>
-                <div class="copy-group">
-                  <a href="mailto:evelynmiteflores@gmail.com" class="contact-value">evelynmiteflores@gmail.com</a>
-                  <button type="button" class="copy-btn" id="copyEmailBtn" data-copy="evelynmiteflores@gmail.com">
-                    Copiar
-                  </button>
-                </div>
-              </div>
-
-              <div class="contact-row">
-                <span class="contact-label">Teléfono</span>
-                <a href="tel:+593979238732" class="contact-value">0979238732</a>
-              </div>
-
-              <div class="contact-row">
-                <span class="contact-label">Ubicación</span>
-                <span class="contact-value">Guayaquil - Ecuador</span>
-              </div>
-            </div>
-          </div>
+          <a href="contacto.html" class="module-card card reveal">
+            <span class="module-num">06 · Contacto</span>
+            <h3>Datos de Contacto</h3>
+            <p>Correo con copia rápida, teléfono directo y ubicación en Guayaquil, Ecuador.</p>
+            <span class="module-go">Abrir módulo →</span>
+          </a>
         </div>
       </div>
     </section>

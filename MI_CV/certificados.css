@@ -1,0 +1,89 @@
+/* =========================================================
+   Módulo Certificaciones y Cursos (certificados.html)
+   ========================================================= */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.55rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  color: var(--ink-secondary);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: var(--bg-deep-beige);
+  color: var(--ink-primary);
+}
+
+.filter-btn.active {
+  background: var(--ink-primary);
+  color: var(--bg-cream);
+  border-color: var(--ink-primary);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.cert-card {
+  padding: 1.45rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-card.is-hidden {
+  display: none;
+}
+
+.cert-issuer {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-bronze-dark);
+  margin-bottom: 0.45rem;
+}
+
+.cert-card h3 {
+  font-size: 1.02rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ink-secondary);
+}
+
+@media (max-width: 960px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .filter-bar {
+    display: none !important;
+  }
+}

@@ -128,9 +128,13 @@ document.addEventListener("DOMContentLoaded", () => {
     revealEls.forEach((el) => el.classList.add("visible"));
   }
 
-  // Resaltado del enlace activo en el menú según la sección visible
+  // Resaltado del enlace activo solo si el menú usa anclas internas (#)
+  const hasHashNav = Array.from(navLinks).some((link) => {
+    const href = link.getAttribute("href") || "";
+    return href.startsWith("#");
+  });
   const sections = document.querySelectorAll("main section[id]");
-  if ("IntersectionObserver" in window && sections.length > 0) {
+  if (hasHashNav && "IntersectionObserver" in window && sections.length > 0) {
     const navObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

@@ -1,0 +1,68 @@
+/* =========================================================
+   Módulo Experiencia Profesional (experiencia.html)
+   ========================================================= */
+
+.timeline {
+  display: grid;
+  gap: 1.6rem;
+  position: relative;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.date-pill {
+  display: inline-block;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-sand);
+  color: var(--ink-secondary);
+  border: 1px solid var(--border-strong);
+}
+
+.date-pill.current {
+  background: var(--ink-primary);
+  color: var(--bg-cream);
+  border-color: var(--ink-primary);
+}
+
+.timeline-card {
+  padding: 1.75rem;
+}
+
+.timeline-head h3 {
+  font-size: 1.22rem;
+  margin-bottom: 0.25rem;
+}
+
+.role-tag {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: var(--accent-bronze-dark);
+  font-size: 0.95rem;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--ink-secondary);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.detail-list li::marker {
+  color: var(--accent-bronze);
+}
+
+@media (max-width: 960px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+}

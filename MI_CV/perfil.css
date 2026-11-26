@@ -1,0 +1,74 @@
+/* =========================================================
+   Módulo Perfil Profesional (perfil.html)
+   ========================================================= */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.8rem;
+  align-items: start;
+}
+
+.profile-statement {
+  padding: 2rem;
+}
+
+.lead-quote {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  line-height: 1.35;
+  color: var(--ink-primary);
+  margin: 0 0 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.profile-statement p:last-child {
+  margin: 0;
+  color: var(--ink-secondary);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pillar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+}
+
+.pillar-index {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-bronze);
+  margin-bottom: 0.45rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.pillar-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+}
+
+@media (max-width: 960px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}

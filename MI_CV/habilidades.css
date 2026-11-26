@@ -1,0 +1,100 @@
+/* =========================================================
+   Módulo Habilidades y Herramientas (habilidades.html)
+   ========================================================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.skill-card {
+  padding: 1.7rem;
+}
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.skill-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.level-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+}
+
+.level-high {
+  background: var(--ink-primary);
+  color: var(--bg-cream);
+}
+
+.level-mid {
+  background: var(--bg-deep-beige);
+  color: var(--ink-primary);
+}
+
+.skill-note {
+  margin: 0 0 1.2rem;
+  font-size: 0.92rem;
+  color: var(--ink-secondary);
+}
+
+.skill-bars {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.bar-track {
+  height: 8px;
+  background: var(--bg-sand);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-bronze), var(--ink-primary));
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tech-tag {
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  background: var(--bg-sand);
+  border: 1px solid var(--border-strong);
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ink-primary);
+}
+
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
